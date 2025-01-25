@@ -1,7 +1,7 @@
 import csv
 import datetime
 
-# Constants for activity types and calories per minute
+
 ACTIVITIES = {
     'Running': 15,
     'Cycling': 9,
@@ -12,11 +12,11 @@ ACTIVITIES = {
     'Stretching': 3
 }
 
-# File paths for storing data
+
 ACTIVITY_HISTORY_FILE = "C:/Users/ASUS/Desktop/Project/activity_history.csv"
 FITNESS_GOALS_FILE = "C:/Users/ASUS/Desktop/Project/fitness_goals.csv"
 
-# Functions to handle the fitness tracking
+
 def log_activity():
     """Logs a new activity to the CSV file."""
     date = input("Enter the date (YYYY-MM-DD): ")
@@ -29,7 +29,7 @@ def log_activity():
     else:
         if activity_name not in ACTIVITIES:
             print(f"{activity_name} is not in the preset activities list.")
-            return  # Exit the function if activity is not found
+            return  
 
         calories_per_minute = ACTIVITIES[activity_name]
 
